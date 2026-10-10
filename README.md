@@ -1,57 +1,59 @@
 # GameNav
 
-GameNav, Blender'ın 3D görünümünde oyunlardaki gibi rahatça hareket etmek için hazırlanmış bağımsız bir WASD gezinme eklentisidir. Özellikle büyük mimari sahnelerde, çevre tasarımlarında ve geniş ölçekli projelerde klasik orbit/pan/zoom kullanımını azaltır.
+GameNav is a standalone Blender extension for navigating the 3D Viewport with familiar game-style controls. It is designed for large architectural scenes, environments, and other projects where orbiting, panning, and zooming can become cumbersome.
 
-## Özellikler
+## Features
 
-- `W A S D` veya ok tuşlarıyla hareket
-- Mouse ile serbest bakış
-- `E / Q` ile yukarı ve aşağı hareket
-- `Shift` ile hızlanma, `Alt` ile hassas/yavaş hareket
-- Mouse tekerleğiyle oturum sırasında anlık hız ayarı
-- Oda, Sahne ve Mega hız profilleri
-- İsteğe bağlı yatay WASD hareketi
-- Yumuşak hızlanma ve durma
-- Seçili nesneye hızlı odaklanma
-- Çok büyük sahneler için uzak görüş ayarı
-- `.blend` dosyasına kaydedilen ana görünüm konumu
-- Ayarlanabilir `Shift + F` kısayolu
+- Move with `W A S D` or the arrow keys
+- Look around freely with the mouse
+- Move up and down with `E / Q`
+- Hold `Shift` to sprint or `Alt` for precise movement
+- Adjust speed during navigation with the mouse wheel
+- Room, Scene, and Mega speed presets
+- Optional horizontal WASD movement
+- Smooth acceleration and deceleration
+- Quickly focus on the selected object
+- Extended viewport clipping for very large scenes
+- Save a home view inside the `.blend` file
+- Configurable `Shift + F` shortcut
 
-## Kurulum
+## Requirements
 
-1. `gamenav-1.0.1.zip` dosyasını indir.
-2. Blender'da **Edit > Preferences > Extensions** bölümünü aç.
-3. Sağ üst menüden **Install from Disk** seçeneğine tıkla.
-4. ZIP dosyasını seç ve GameNav'i etkinleştir.
-5. 3D Viewport'ta `N` tuşuyla Sidebar'ı açıp **GameNav** sekmesine geç.
+- Blender 4.2 or newer
 
-GameNav, Blender 4.2 ve üzeri sürümler için paketlenmiştir.
+## Installation
 
-## Kullanım
+1. Download the latest `gamenav-*.zip` package.
+2. In Blender, open **Edit > Preferences > Extensions**.
+3. Open the menu in the top-right corner and choose **Install from Disk**.
+4. Select the ZIP file and enable GameNav.
+5. In the 3D Viewport, press `N` and open the **GameNav** tab.
 
-3D Viewport üzerindeyken `Shift + F` tuşlarına bas veya GameNav panelindeki **WASD Gezinmeyi Başlat** düğmesini kullan.
+## Usage
 
-| Kontrol | İşlev |
+With the cursor over the 3D Viewport, press `Shift + F` or click **WASD Gezinmeyi Başlat** in the GameNav panel.
+
+| Control | Action |
 | --- | --- |
-| `W A S D` / Oklar | Hareket |
-| Mouse | Bakış |
-| `E / Q` | Yukarı / Aşağı |
-| `Shift` | Hızlan |
-| `Alt` | Yavaş ve hassas hareket |
-| Mouse tekerleği | Anlık hızı artır / azalt |
-| Sol tık / Enter | Yeni görünümü koruyup çık |
-| Esc / Sağ tık | Başlangıç görünümüne dönüp çık |
+| `W A S D` / Arrow keys | Move |
+| Mouse | Look around |
+| `E / Q` | Move up / down |
+| `Shift` | Sprint |
+| `Alt` | Move slowly and precisely |
+| Mouse wheel | Increase / decrease movement speed |
+| Left click / `Enter` | Keep the new view and exit |
+| `Esc` / Right click | Restore the starting view and exit |
 
-Kısayolu değiştirmek için **Edit > Preferences > Keymap** altında `GameNav` veya `GameNav Başlat` araması yapabilirsin.
+To change the shortcut, open **Edit > Preferences > Keymap** and search for `GameNav` or `GameNav Başlat`.
 
-## Geliştirme
+## Build from Source
 
-Kaynak klasörünün kökünde hem `__init__.py` hem de `blender_manifest.toml` bulunur. Blender'ın güncel extension sistemiyle doğrudan paketlenebilir:
+The repository root contains both `__init__.py` and `blender_manifest.toml`. Build an installable extension package with Blender's command-line interface:
 
 ```text
 blender --command extension build
 ```
 
-## Lisans
+## License
 
-GPL-3.0-or-later. Ayrıntılar için `LICENSE` dosyasına bak.
+GameNav is licensed under the GPL-3.0-or-later license. See [LICENSE](LICENSE) for details.

@@ -1,0 +1,18 @@
+schema_version = "1.0.0"
+
+id = "gamenav"
+version = "1.0.1"
+name = "GameNav"
+tagline = "Navigate large scenes with game-style WASD controls"
+maintainer = "Talba"
+type = "add-on"
+
+tags = ["3D View", "User Interface"]
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[permissions]
+# GameNav is fully offline and needs no filesystem, network, camera, or microphone access.
